@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport for men going outside the state</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .status-pending {
+            background-color: #FEF3C7;
+            color: #92400E;
+        }
+
+        .status-approved {
+            background-color: #D1FAE5;
+            color: #065F46;
+        }
+
+        .status-rejected {
+            background-color: #FEE2E2;
+            color: #991B1B;
+        }
+
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            width: 100%;
+            max-width: 32rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Login Screen -->
+    <div id="loginScreen" class="min-h-screen flex items-center justify-center">
+        <div class="max-w-md w-full mx-4">
+            <div class="text-center mb-8">
+                <div class="bg-blue-600 inline-block p-3 rounded-full mb-4">
+                    <i class="fas fa-shield-alt text-white text-4xl"></i>
+                </div>
+                <h1 class="text-3xl font-bold text-gray-800">P
+                    <!DOCTYPE html>
+                    <html lang="en">
+
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Passport For Men Going Outside The State - AP</title>
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+                        <link rel="stylesheet"
+                            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                        <style>
+                            .hidden {
+                                display: none;
+                            }
+
+                            .fade-in {
+                                animation: fadeIn 0.3s ease-in;
+                            }
+
+                            @keyframes fadeIn {
+                                from {
+                                    opacity: 0;
+                                }
+
+                                to {
+                                    opacity: 1;
+                                }
+                            }
+
+                            .status-badge {
+                                padding: 0.25rem 0.75rem;
+                                border-radius: 9999px;
+                                font-size: 0.75rem;
+                                font-weight: 600;
+                            }
+
+                            .status-pending {
+                                background-color: #FEF3C7;
+                                color: #92400E;
+                            }
+
+                            .status-approved {
+                                background-color: #D1FAE5;
+                                color: #065F46;
+                            }
+
+                            .status-rejected {
+                                background-color: #FEE2E2;
+                                color: #991B1B;
+                            }
+
+                            .modal {
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                z-index: 50;
+                            }
+
+                            .modal-content {
+                                background-color: white;
+                                padding: 2rem;
+                                border-radius: 0.5rem;
+                                width: 100%;
+                                max-width: 32rem;
+                            }
+                        </style>
+                    </head>
+
+                    <body class="bg-gray-100">
+                        <!-- Login Screen -->
+                        <div id="loginScreen" class="min-h-screen flex items-center justify-center">
+                            <div class="max-w-md w-full mx-4">
+                                <div class="text-center mb-8">
+                                    <div class="bg-blue-600 inline-block p-3 rounded-full mb-4">
+                                        <i class="fas fa-shield-alt text-white text-4xl"></i>
+                                    </div>
+                                    <h1 class="text-3xl font-bold text-gray-800">Passport For Men Going Outside The
+                                        State - AP</h1>
+                                    <p class="text-gray-600 mt-2">Login to access your dashboard</p>
+                                </div>
+
+                                <div class="bg-white rounded-lg shadow-lg p-8">
+                                    <form id="loginForm" class="space-y-6">
+                                        <div>
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                                                Username
+                                            </label>
+                                            <input
+                                                class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                id="username" type="text" required>
+                                        </div>
+                                        <div>
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                                                Password
+                                            </label>
+                                            <input
+                                                class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                                                id="password" type="password" required>
+                                        </div>
+                                        <div>
+                                            <label class="block text-gray-700 text-sm font-bold mb-2" for="role">
+                                                Role
+                                            </label>
+                                            <select
+                                                class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                                id="role" required>
+                                                <option value="">Select your role</option>
+                                                <option value="station">Station Officer</option>
+                                                <option value="dcrb">DCRB Panel</option>
+                                                <option value="sp">State SP</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <button type="submit"
+                                                class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300">
+                                                Login
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dashboard Screen (Initially Hidden) -->
+                        <div id="dashboardScreen" class="hidden">
+                            <!-- Navigation -->
+                            <nav class="bg-white shadow-lg">
+                                <div class="max-w-7xl mx-auto px-4">
+                                    <div class="flex justify-between h-16">
+                                        <div class="flex items-center">
+                                            <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                                            <span class="ml-2 font-semibold text-xl">Passport For Men Going Outside The
+                                                State - AP
+                                                Dashboard</span>
+                                        </div>
+                                        <div class="flex items-center space-x-4">
+                                            <span id="userWelcome" class="text-gray-700"></span>
+                                            <button onclick="logout()" class="text-gray-700 hover:text-gray-900">
+                                                <i class="fas fa-sign-out-alt"></i> Logout
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+
+                            <!-- Main Content -->
+                            <div class="max-w-7xl mx-auto px-4 py-6">
+                                <!-- Action Bar -->
+                                <div class="flex justify-between items-center mb-6">
+                                    <button onclick="showNewRequestModal()"
+                                        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md">
+                                        <i class="fas fa-plus mr-2"></i> New Investigation Request
+                                    </button>
+                                    <div class="flex space-x-2">
+                                        <div class="relative">
+                                            <i class="fas fa-search absolute left-3 top-3 text-gray-400"></i>
+                                            <input type="text" id="searchInput" placeholder="Search cases..."
+                                                class="pl-10 pr-4 py-2 border rounded-md">
+                                        </div>
+                                        <button onclick="toggleFilters()"
+                                            class="border border-gray-300 px-4 py-2 rounded-md hover:bg-gray-50">
+                                            <i class="fas fa-filter mr-2"></i> Filter
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!-- Status Cards -->
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                                    <div class="bg-blue-50 p-6 rounded-lg shadow">
+                                        <div class="flex justify-between items-center">
+                                            <div>
+                                                <p class="text-sm text-blue-600">Pending Requests</p>
+                                                <h3 id="pendingCount" class="text-2xl font-bold">0</h3>
+                                            </div>
+                                            <i class="fas fa-clock text-blue-600 text-3xl"></i>
+                                        </div>
+                                    </div>
+                                    <div class="bg-green-50 p-6 rounded-lg shadow">
+                                        <div class="flex justify-between items-center">
+                                            <div>
+                                                <p class="text-sm text-green-600">Approved</p>
+                                                <h3 id="approvedCount" class="text-2xl font-bold">0</h3>
+                                            </div>
+                                            <i class="fas fa-check-circle text-green-600 text-3xl"></i>
+                                        </div>
+                                    </div>
+                                    <div class="bg-red-50 p-6 rounded-lg shadow">
+                                        <div class="flex justify-between items-center">
+                                            <div>
+                                                <p class="text-sm text-red-600">Rejected</p>
+                                                <h3 id="rejectedCount" class="text-2xl font-bold">0</h3>
+                                            </div>
+                                            <i class="fas fa-times-circle text-red-600 text-3xl"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Main Table Section -->
+                                <div class="bg-white rounded-lg shadow">
+                                    <div class="p-6">
+                                        <h2 class="text-xl font-semibold mb-4">Investigation Requests</h2>
+
+                                        <!-- Tab Buttons -->
+                                        <div class="flex space-x-4 mb-4">
+                                            <button onclick="filterByStatus('pending')"
+                                                class="tab-button px-4 py-2 rounded-md bg-blue-600 text-white">
+                                                Pending
+                                            </button>
+                                            <button onclick="filterByStatus('approved')"
+                                                class="tab-button px-4 py-2 rounded-md bg-gray-100 text-gray-600 hover:bg-gray-200">
+                                                Approved
+                                            </button>
+                                            <button onclick="filterByStatus('rejected')"
+                                                class="tab-button px-4 py-2 rounded-md bg-gray-100 text-gray-600 hover:bg-gray-200">
+                                                Rejected
+                                            </button>
+                                        </div>
+
+                                        <!-- Table -->
+                                        <div class="overflow-x-auto">
+                                            <table class="min-w-full divide-y divide-gray-200">
+                                                <thead class="bg-gray-50">
+                                                    <tr>
+                                                        <th
+                                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
+                                                            Case
+                                                            Number</th>
+                                                        <th
+                                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
+                                                            Description</th>
+                                                        <th
+                                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
+                                                            Status
+                                                        </th>
+                                                        <th
+                                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
+                                                            Date
+                                                        </th>
+                                                        <th
+                                                            class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">
+                                                            Actions
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="requestsTableBody" class="bg-white divide-y divide-gray-200">
+                                                    <!-- Table content will be dynamically populated -->
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- New Request Modal (Initially Hidden) -->
+                        <div id="newRequestModal" class="modal hidden">
+                            <div class="modal-content">
+                                <h2 class="text-xl font-bold mb-4">New Investigation Request</h2>
+                                <form id="newRequestForm" class="space-y-4">
+                                    <div>
+                                        <label class="block text-gray-700 text-sm font-bold mb-2">Case Number</label>
+                                        <input type="text" name="caseNumber" required
+                                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                                    </div>
+                                    <div>
+                                        <label class="block text-gray-700 text-sm font-bold mb-2">Description</label>
+                                        <textarea name="description" required
+                                            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-24"></textarea>
+                                    </div>
+                                    <div class="flex justify-end space-x-2">
+                                        <button type="button" onclick="hideNewRequestModal()"
+                                            class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+                                            Cancel
+                                        </button>
+                                        <button type="submit"
+                                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <script>
+                            // Mock data storage
+                            let investigations = [];
+                            let currentUser = null;
+                            let currentStatus = 'pending';
+
+                            // User credentials (in real app, this would be server-side)
+                            const users = {
+                                'station1': { password: 'pass123', role: 'station', name: 'Ravi Kumar Reddy Officer' },
+                                'dcrb1': { password: 'pass123', role: 'dcrb', name: 'Venkatesh Rao DCRB' },
+                                'sp1': { password: 'pass123', role: 'sp', name: 'Anil Prasad IPS SP' }
+                            };
+
+                            // Login form handler
+                            document.getElementById('loginForm').addEventListener('submit', function (e) {
+                                e.preventDefault();
+                                const username = document.getElementById('username').value;
+                                const password = document.getElementById('password').value;
+                                const role = document.getElementById('role').value;
+
+                                // Validate credentials
+                                if (users[username] && users[username].password === password && users[username].role === role) {
+                                    currentUser = { ...users[username], username };
+                                    login();
+                                } else {
+                                    alert('Invalid credentials!');
+                                }
+                            });
+
+                            // New request form handler
+                            document.getElementById('newRequestForm').addEventListener('submit', function (e) {
+                                e.preventDefault();
+                                const formData = new FormData(e.target);
+
+                                const newRequest = {
+                                    id: Date.now(),
+                                    caseNumber: formData.get('caseNumber'),
+                                    description: formData.get('description'),
+                                    status: 'pending',
+                                    date: new Date().toISOString().split('T')[0],
+                                    officer: currentUser.username,
+                                    forwardedToDCRB: false,
+                                    forwardedToSP: false
+                                };
+
+                                investigations.push(newRequest);
+                                hideNewRequestModal();
+                                updateDashboard();
+                            });
+
+                            // Search functionality
+                            document.getElementById('searchInput').addEventListener('input', function (e) {
+                                updateDashboard();
+                            });
+
+                            function login() {
+                                document.getElementById('loginScreen').classList.add('hidden');
+                                document.getElementById('dashboardScreen').classList.remove('hidden');
+                                document.getElementById('userWelcome').textContent = `Welcome, ${currentUser.name}`;
+                                updateDashboard();
+                            }
+
+                            function logout() {
+                                currentUser = null;
+                                document.getElementById('dashboardScreen').classList.add('hidden');
+                                document.getElementById('loginScreen').classList.remove('hidden');
+                                document.getElementById('loginForm').reset();
+                            }
+
+                            function showNewRequestModal() {
+                                if (!currentUser) {
+                                    alert("Please log in first.");
+                                    return;
+                                }
+
+                                if (currentUser.role === 'station') {
+                                    let modal = document.getElementById('newRequestModal');
+                                    console.log("Opening Modal:", modal);
+
+                                    if (modal) {
+                                        modal.classList.remove('hidden');
+                                        modal.style.display = 'flex';  // Force showing
+                                    } else {
+                                        console.error("Modal not found!");
+                                    }
+                                } else {
+                                    alert("Only Station Officers can create new case requests.");
+                                }
+                            }
+
+                            function hideNewRequestModal() {
+                                let modal = document.getElementById('newRequestModal');
+                                modal.classList.add('hidden'); // Hide the modal
+                                modal.style.display = 'none';  // Ensure it disappears
+
+                                document.getElementById('newRequestForm').reset(); // Clear form fields
+                            }
+
+
+
+                            function filterByStatus(status) {
+                                currentStatus = status;
+                                // Update tab buttons styling
+                                document.querySelectorAll('.tab-button').forEach(btn => {
+                                    btn.classList.remove('bg-blue-600', 'text-white');
+                                    btn.classList.add('bg-gray-100', 'text-gray-600', 'hover:bg-gray-200');
+                                });
+                                const activeButton = document.querySelector(`button[onclick="filterByStatus('${status}')"]`);
+                                activeButton.classList.remove('bg-gray-100', 'text-gray-600', 'hover:bg-gray-200');
+                                activeButton.classList.add('bg-blue-600', 'text-white');
+
+                                updateDashboard();
+                            }
+
+                            function updateDashboard() {
+                                const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+                                // Filter investigations based on current status and search term
+                                let filteredInvestigations = investigations.filter(inv => {
+                                    const matchesSearch =
+                                        inv.caseNumber.toLowerCase().includes(searchTerm) ||
+                                        inv.description.toLowerCase().includes(searchTerm);
+
+                                    const matchesStatus = inv.status === currentStatus;
+
+                                    // For station officers, only show their own requests
+                                    if (currentUser.role === 'station') {
+                                        return matchesSearch && matchesStatus && inv.officer === currentUser.username;
+                                    }
+
+                                    // For DCRB, show pending cases not yet forwarded to SP
+                                    if (currentUser.role === 'dcrb') {
+                                        return matchesSearch && matchesStatus && !inv.forwardedToSP;
+                                    }
+
+                                    // For SP, show pending cases forwarded by DCRB
+                                    if (currentUser.role === 'sp') {
+                                        return matchesSearch && matchesStatus && inv.forwardedToSP;
+                                    }
+
+                                    return matchesSearch && matchesStatus;
+                                });
+
+                                // Update status counts
+                                document.getElementById('pendingCount').textContent =
+                                    investigations.filter(inv => inv.status === 'pending').length;
+                                document.getElementById('approvedCount').textContent =
+                                    investigations.filter(inv => inv.status === 'approved').length;
+                                document.getElementById('rejectedCount').textContent =
+                                    investigations.filter(inv => inv.status === 'rejected').length;
+
+                                // Update table
+                                const tbody = document.getElementById('requestsTableBody');
+                                tbody.innerHTML = '';
+
+                                filteredInvestigations.forEach(inv => {
+                                    const tr = document.createElement('tr');
+                                    tr.className = 'hover:bg-gray-50';
+
+                                    const statusClass = {
+                                        'pending': 'status-pending',
+                                        'approved': 'status-approved',
+                                        'rejected': 'status-rejected'
+                                    }[inv.status];
+
+                                    tr.innerHTML = `
+                    <td class="px-6 py-4 whitespace-nowrap">${inv.caseNumber}</td>
+                    <td class="px-6 py-4">${inv.description}</td>
+                    <td class="px-6 py-4">
+                        <span class="status-badge ${statusClass}">
+                            ${inv.status.charAt(0).toUpperCase() + inv.status.slice(1)}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap">${inv.date}</td>
+                    <td class="px-6 py-4 whitespace-nowrap">
+                        <div class="flex space-x-2">
+                            <button onclick="viewRequest(${inv.id})" 
+                                    class="inline-flex items-center px-3 py-1 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">
+                                <i class="fas fa-eye mr-2"></i> View
+                            </button>
+                            ${getActionButtons(inv)}
+                        </div>
+                    </td>
+                `;
+
+                                    tbody.appendChild(tr);
+                                });
+                            }
+
+                            function getActionButtons(investigation) {
+                                if (currentUser.role === 'dcrb' && investigation.status === 'pending' && !investigation.forwardedToSP) {
+                                    return `
+                    <button onclick="forwardToSP(${investigation.id})" 
+                            class="inline-flex items-center px-3 py-1 border border-blue-300 rounded-md text-sm font-medium text-blue-700 bg-blue-50 hover:bg-blue-100">
+                        <i class="fas fa-forward mr-2"></i> Forward to SP
+                    </button>
+                `;
+                                }
+
+                                if (currentUser.role === 'sp' && investigation.status === 'pending' && investigation.forwardedToSP) {
+                                    return `
+                    <button onclick="approveRequest(${investigation.id})" 
+                            class="inline-flex items-center px-3 py-1 border border-green-300 rounded-md text-sm font-medium text-green-700 bg-green-50 hover:bg-green-100">
+                        <i class="fas fa-check mr-2"></i> Approve
+                    </button>
+                    <button onclick="rejectRequest(${investigation.id})" 
+                            class="inline-flex items-center px-3 py-1 border border-red-300 rounded-md text-sm font-medium text-red-700 bg-red-50 hover:bg-red-100">
+                        <i class="fas fa-times mr-2"></i> Reject
+                    </button>
+                `;
+                                }
+
+                                return '';
+                            }
+
+                            function viewRequest(id) {
+                                const investigation = investigations.find(inv => inv.id === id);
+                                if (investigation) {
+                                    alert(`
+Case Details:
+Case Number: ${investigation.caseNumber}
+Description: ${investigation.description}
+Status: ${investigation.status}
+Date: ${investigation.date}
+Officer: ${investigation.officer}
+                `);
+                                }
+                            }
+
+                            function forwardToSP(id) {
+                                const investigation = investigations.find(inv => inv.id === id);
+                                if (investigation && confirm('Forward this case to State SP?')) {
+                                    investigation.forwardedToSP = true;
+                                    updateDashboard();
+                                }
+                            }
+
+                            function approveRequest(id) {
+                                const investigation = investigations.find(inv => inv.id === id);
+                                if (investigation && confirm('Approve this investigation request?')) {
+                                    investigation.status = 'approved';
+                                    investigation.approvedDate = new Date().toISOString().split('T')[0];
+                                    updateDashboard();
+                                }
+                            }
+
+                            function rejectRequest(id) {
+                                const investigation = investigations.find(inv => inv.id === id);
+                                if (investigation && confirm('Reject this investigation request?')) {
+                                    investigation.status = 'rejected';
+                                    investigation.rejectedDate = new Date().toISOString().split('T')[0];
+                                    updateDashboard();
+                                }
+                            }
+
+                            // Add some sample data for testing
+                            function addSampleData() {
+                                investigations = [
+                                    {
+                                        id: 1,
+                                        caseNumber: "CR2025-001",
+                                        description: "Theft investigation at Main Street",
+                                        status: "pending",
+                                        date: "2025-02-19",
+                                        officer: "station1",
+                                        forwardedToDCRB: false,
+                                        forwardedToSP: false
+                                    },
+                                    {
+                                        id: 2,
+                                        caseNumber: "CR2025-002",
+                                        description: "Fraud case investigation",
+                                        status: "approved",
+                                        date: "2025-02-18",
+                                        officer: "station1",
+                                        forwardedToDCRB: false,
+                                        forwardedToSP: false
+                                    },
+                                    {
+                                        id: 3,
+                                        caseNumber: "CR2025-003",
+                                        description: "Missing person investigation",
+                                        status: "rejected",
+                                        date: "2025-02-17",
+                                        officer: "station1",
+                                        forwardedToDCRB: false,
+                                        forwardedToSP: false
+                                    }
+                                ];
+                            }
+
+                            window.onload = function () {
+                                let modal = document.getElementById('newRequestModal');
+                                console.log("Window loaded. Modal classes:", modal.classList); // Debugging
+                                modal.classList.add('hidden');
+                                modal.style.display = 'none';  // Force hiding
+                            };
+
+                            // Initialize sample data
+                            addSampleData();
+                        </script>
+                    </body>
+
+                    </html>
